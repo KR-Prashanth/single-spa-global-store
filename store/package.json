@@ -1,7 +1,7 @@
 {
   "name": "@demo/store",
   "scripts": {
-    "start": "webpack serve --port 8083",
+    "start": "webpack serve --port 8002",
     "start:standalone": "webpack serve --env standalone",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",

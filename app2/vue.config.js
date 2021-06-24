@@ -1,7 +1,9 @@
 module.exports = {
-  chainWebpack: (config) => {
-    config.externals({
-      "@demo/store": "@demo/store",
-    });
+  configureWebpack: {
+    externals: ["vue", /^@demo\/.+/],
   },
+  css: {
+    sourceMap: true,
+  },
+  productionSourceMap: false,
 };

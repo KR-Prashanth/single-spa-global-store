@@ -5,33 +5,31 @@
       width="70px"
       src="./assets/logo.png"
       @click="incrementCounter"
+      style="cursor: pointer"
     />
     <div>APP 1: {{ count }}</div>
   </div>
 </template>
 
 <script>
-import { counter, incrementCounter } from "@demo/store";
+import state from "@demo/store";
 export default {
   name: "App",
   components: {},
   data() {
     return {
-     // count: counter,
+      // count: counter,
     };
   },
 
   computed: {
     count() {
-      return counter;
-    }
-  },
-  mounted() {
-    console.log(counter.value);
+      return state.count;
+    },
   },
   methods: {
     incrementCounter() {
-      incrementCounter();
+      state.count += 1;
     },
   },
 };

@@ -33,7 +33,8 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+          "vue": "https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"
         }
       }
     </script>
@@ -51,10 +52,10 @@
       {
         "imports": {
           "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
-          "@demo/root-config": "//localhost:9005/demo-root-config.js",
-          "@demo/app1": "http://localhost:8081/js/app.js",
-          "@demo/app2": "http://localhost:8082/js/app.js",
-          "@demo/store": "http://localhost:8083/demo-store.js"
+          "@demo/root-config": "http://localhost:9005/demo-root-config.js",
+          "@demo/app1": "http://localhost:8000/js/app.js",
+          "@demo/app2": "http://localhost:8001/js/app.js",
+          "@demo/store": "http://localhost:8002/demo-store.js"
         }
       }
     </script>
